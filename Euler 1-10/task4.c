@@ -19,7 +19,7 @@ int main()
                 ans = temp;
             }
         }
-    printf("%ld", ans);
+    printf("%ld\n", ans);
     return 0;
 }
 

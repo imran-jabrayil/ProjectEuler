@@ -18,7 +18,7 @@ int main()
             count++;
         }
     }
-    printf("%ld", findSum(primes, count));
+    printf("%ld\n", findSum(primes, count));
     return 0;
 }
 

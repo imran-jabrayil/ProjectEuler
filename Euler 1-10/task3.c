@@ -17,7 +17,7 @@ int main()
             primes[count] = i;
             count++;
         }
-    printf("%ld", findPrime(primes, n, count));
+    printf("%ld\n", findPrime(primes, n, count));
     return 0;
 }
 

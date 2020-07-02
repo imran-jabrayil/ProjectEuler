@@ -10,11 +10,8 @@ int main()
     long int sum = 0;
     int n = 28123;
     for (int i = 1; i <= n; i++)
-    {
-        printf("%d\n", i);
         if (notAbSum(i))
             sum += i;
-    }
     printf("%ld\n", sum);
     
     return 0;

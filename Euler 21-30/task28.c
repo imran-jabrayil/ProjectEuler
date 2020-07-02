@@ -14,7 +14,7 @@ int main()
     long int * matrix = (long int *)calloc(size * size, sizeof(long int));
     fillMatrix(matrix, size);
     long int sum = findSum(matrix, size);
-    printf("%ld", sum);
+    printf("%ld\n", sum);
     return 0;
 }
 

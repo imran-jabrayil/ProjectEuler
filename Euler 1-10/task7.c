@@ -19,7 +19,7 @@ int main()
         }
         num++;
     }
-    printf("%ld", primes[10000]);
+    printf("%ld\n", primes[10000]);
     return 0;
 }
 

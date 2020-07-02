@@ -14,7 +14,7 @@ int main()
             break;
         i++;
     }
-    printf("\n%lld\n", num);
+    printf("%lld\n", num);
     return 0;
 }
 

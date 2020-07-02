@@ -22,7 +22,7 @@ int main()
                 b = j;
             }
         }
-    printf("%ld", a * b);
+    printf("%ld\n", a * b);
     return 0;
 }
 

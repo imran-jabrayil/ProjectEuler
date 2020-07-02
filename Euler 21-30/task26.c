@@ -19,7 +19,7 @@ int main()
             num = i;
         }
     }
-    printf("%d", num);
+    printf("%d\n", num);
     return 0;
 }
 

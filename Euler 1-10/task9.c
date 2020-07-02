@@ -8,7 +8,7 @@ int main()
             for (long int c = 1; c < 1000; c++)
                 if ((a*a + b*b == c*c) && (a + b + c == 1000))
                 {
-                    printf("%ld", a*b*c);
+                    printf("%ld\n", a*b*c);
                     return 0;
                 }
     return 0;

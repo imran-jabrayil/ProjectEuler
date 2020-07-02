@@ -17,7 +17,7 @@ int main()
             ans = i;
         }
     }
-    printf("%ld", ans);
+    printf("%ld\n", ans);
 }
 
 

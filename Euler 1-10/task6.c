@@ -8,7 +8,7 @@ long int sqOfSum(int n);
 
 int main()
 {
-    printf("%ld", sqOfSum(100) - sumOfSq(100));
+    printf("%ld\n", sqOfSum(100) - sumOfSq(100));
     return 0;
 }
 

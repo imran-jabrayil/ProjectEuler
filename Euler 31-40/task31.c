@@ -14,6 +14,6 @@ int main()
                                 for (int p = 0; p <= 1; p++)
                                     if (i * 1 + j * 2 + k * 5 + l * 10 + m * 20 + n * 50 + o * 100 + p * 200 == 200)
                                         count++; 
-    printf("%d", count);
+    printf("%d\n", count);
     return 0;
 }

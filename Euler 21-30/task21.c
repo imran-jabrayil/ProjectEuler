@@ -9,7 +9,7 @@ int main()
     for (int i = 1; i < 10000; i++)
         if (i == friendly(friendly(i)) && i != friendly(i))
             sum += i;
-    printf("%ld", sum);
+    printf("%ld\n", sum);
     return 0;
 }
 

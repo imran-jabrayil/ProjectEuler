@@ -11,7 +11,7 @@ int main()
     for (long int i = 2; i <= 295246; i++)
         if (sumNums(i) == i)
             sum += i;
-    printf("%ld", sum);
+    printf("%ld\n", sum);
     return 0;
 }
 
