@@ -1,6 +1,8 @@
-f = open("names.txt", "r")
+f = open("D:\\Programming\\ProjectEuler\\Euler 21-30\\names.txt", "r")
 
 names = sorted([i[1:-1] for i in f.read().split(",")])
+
+f.close()
 
 def code(name):
     num = 0
