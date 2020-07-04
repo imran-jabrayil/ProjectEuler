@@ -1,4 +1,6 @@
 from math import sqrt
+from time import time
+
 
 def word_value(word):
     value = 0
@@ -29,4 +31,7 @@ for i in words:
     if is_triangle(i):
         count += 1
 
+
+start = time()
 print(count)
+print("Time {} s.".format(time() - start))

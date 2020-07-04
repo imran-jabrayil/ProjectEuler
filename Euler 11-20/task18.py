@@ -1,3 +1,5 @@
+from time import time
+
 triag = [int(i) for i in '''75
 95 64
 17 47 82
@@ -26,4 +28,6 @@ def calc(summa, index, line):
 
 calc(0, 0, 1)
 
+start = time()
 print(max(result))
+print("Time {} s.".format(time() - start))

@@ -1,4 +1,5 @@
 from itertools import permutations
+from time import time
 
 
 def is_prime(num):
@@ -10,14 +11,17 @@ def is_prime(num):
     return True
 
 
-numbers = []
-for i in range(9, 0, -1):
-    numbers.extend(list(map(int, [''.join(c) for c in permutations("".join([str(x) for x in range(1, i + 1)]))])))
-numbers.sort()
+def calculate():
+    numbers = []
+    for i in range(9, 0, -1):
+        numbers.extend(list(map(int, [''.join(c) for c in permutations("".join([str(x) for x in range(1, i + 1)]))])))
+    numbers.sort()
+
+    for i in numbers[::-1]:
+        if is_prime(i):
+            return i
 
 
-for i in numbers[::-1]:
-    print(i)
-    if is_prime(i):
-        print("Answer", i)
-        break
+start = time()
+print(calculate())
+print("Time {} s.".format(time() - start))

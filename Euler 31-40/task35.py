@@ -1,4 +1,5 @@
-numbers = 1000000
+from time import time
+
 
 def primes_list(n):
     lst=[2]
@@ -15,6 +16,7 @@ def primes_list(n):
     		lst.append(i)
     return lst
 
+
 def is_prime(primes, num):
     if num == 1:
         return False
@@ -25,6 +27,7 @@ def is_prime(primes, num):
             return True
     return True
 
+
 def rotate_number(orig, num):
     num = int(str(num)[-1] + str(num)[:-1])
     if num == orig:
@@ -32,9 +35,10 @@ def rotate_number(orig, num):
     return num
 
 
-print("Primes are not ready")
+start = time()
+
+numbers = 1000000
 primes = primes_list(numbers)
-print("Primes are ready")
 count = 4 #2, 3, 5, 7
 
 
@@ -52,3 +56,5 @@ for i in range(10, 1000000):
         x = is_prime(primes, temp)
 
 print(count)
+
+print("Time {} s.".format(time() - start))

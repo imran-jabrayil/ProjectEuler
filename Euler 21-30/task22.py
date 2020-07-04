@@ -1,3 +1,5 @@
+from time import time
+
 f = open("D:\\Programming\\ProjectEuler\\Euler 21-30\\names.txt", "r")
 
 names = sorted([i[1:-1] for i in f.read().split(",")])
@@ -16,4 +18,6 @@ summa = 0
 for i in names:
     summa += code(i)
 
+start = time()
 print(summa)
+print("Time {} s.".format(time() - start))

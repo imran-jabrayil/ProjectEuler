@@ -1,3 +1,5 @@
+from time import time
+
 def same_frac(numer1, denom1):
     for i in str(numer1):
         if i in str(denom1) and i != '0':
@@ -21,6 +23,7 @@ def lowest_denom(numer, denom):
     return denom
 
 
+start = time()
 
 numer, denom = 1, 1
 
@@ -32,3 +35,5 @@ for i in range(10, 100):
             denom *= i
 
 print(lowest_denom(numer, denom))
+
+print("Time {} s.".format(time() - start))

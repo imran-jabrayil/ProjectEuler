@@ -9,7 +9,7 @@ def is_prime(num, lst):
 
 
 def fill_primes(num, lst):
-    for i in range(lst[-1], num):
+    for i in range(lst[-1] + 1, num):
         if is_prime(i, lst):
             lst.append(i)
     return lst

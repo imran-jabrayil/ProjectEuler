@@ -1,3 +1,5 @@
+from time import time
+
 dct = {
     1: 3,
     2: 3,
@@ -47,10 +49,13 @@ def letters(x):
         return 0
 
 
-if __name__ == "__main__":
+def calculate(limit):
     L = []
-
-    for i in range(1, 1001):
+    for i in range(1, limit):
         L.append(letters(i))
+    return sum(L)
 
-    print(sum(L))
+
+start = time()
+print(calculate(1001))
+print("Time {} s.".format(time() - start))

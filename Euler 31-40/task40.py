@@ -1,13 +1,21 @@
-num = 0
-d = ''
+from time import time
 
-while len(d) < 1000000:
-    num += 1
-    d += str(num)
 
-result = 1
+def calculate():
+    num = 0
+    d = ''
+    result = 1
 
-for i in range(0, 7):
-    result *= int(d[10**i - 1])
+    while len(d) < 1000000:
+        num += 1
+        d += str(num)
 
-print(result)
+    for i in range(0, 7):
+        result *= int(d[10**i - 1])
+
+    return result
+
+
+start = time()
+print(calculate())
+print("Time {} s.".format(time() - start))

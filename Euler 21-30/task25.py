@@ -1,11 +1,19 @@
-a, b = 1, 1
-x = 2
-count = 3
+from time import time
 
-while len(str(x)) < 1000:
-    b = a
-    a = x
-    x = a + b
-    count += 1
+def calculate():
+    a, b = 1, 1
+    x = 2
+    count = 3
 
-print(count)
+    while len(str(x)) < 1000:
+        b = a
+        a = x
+        x = a + b
+        count += 1
+    
+    return count
+
+
+start = time()
+print(calculate())
+print("Time {} s.".format(time() - start))
