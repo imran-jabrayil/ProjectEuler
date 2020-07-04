@@ -2,23 +2,22 @@
 #include <stdlib.h>
 
 
-int fillFib(int * array, int n);
-int findSum(int * array, int len);
+int fillFib(int * array, long int n);
+long int findSum(int * array, int len);
 
 
 int main()
 {
     int * fib = (int *)calloc(1000, sizeof(int));
-    int n;
-    scanf("%d", &n);
+    long int n = 4000000;
     int len = fillFib(fib, n);
     n = findSum(fib, len);
-    printf("%d\n", n);
+    printf("%ld\n", n);
     return 0;
 }
 
 
-int fillFib(int * array, int n)
+int fillFib(int * array, long int n)
 {
     int i = 2;
     array[0] = 1;
@@ -32,9 +31,9 @@ int fillFib(int * array, int n)
 }
 
 
-int findSum(int * array, int len)
+long int findSum(int * array, int len)
 {
-    int sum = 0;
+    long int sum = 0;
     for (int i = 0; i < len; i++)
         if (array[i] % 2 == 0)
             sum += array[i];
