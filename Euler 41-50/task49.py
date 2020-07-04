@@ -1,5 +1,6 @@
 from itertools import permutations
 from math import sqrt
+from time import time
 
 
 def is_prime(num, lst):
@@ -30,4 +31,6 @@ def numbers_list():
     return L[-1]
 
 
+start = time()
 print(numbers_list())
+print("Time {} s.".format(time() - start))

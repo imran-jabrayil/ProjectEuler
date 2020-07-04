@@ -49,4 +49,6 @@ def find_answer(count):
     return L[0]
 
 
+start = time()
 print(find_answer(4))
+print("Time {} s.".format(time() - start))

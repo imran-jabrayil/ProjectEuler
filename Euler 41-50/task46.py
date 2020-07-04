@@ -1,4 +1,5 @@
 from math import sqrt
+from time import time
 
 
 def is_prime(num, lst):
@@ -34,5 +35,7 @@ def find_answer():
         if not is_sum(odd, primes):
             return odd
 
-result = find_answer()
-print(result)
+
+start = time()
+print(find_answer())
+print("Time {} s.".format(time() - start))
