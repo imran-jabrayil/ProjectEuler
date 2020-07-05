@@ -1,4 +1,3 @@
-from math import pow
 from time import time
 
 start = time()
