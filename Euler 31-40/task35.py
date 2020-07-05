@@ -43,7 +43,6 @@ count = 4 #2, 3, 5, 7
 
 
 for i in range(10, 1000000):
-    print("{}%".format(round((i - 10) / (1000000 - 10) * 100, 3)))
     if '0' in str(i) or '2' in str(i) or '4' in str(i) or '6' in str(i) or '8' in str(i) or '5' in str(i):
         continue
     x = is_prime(primes, i)

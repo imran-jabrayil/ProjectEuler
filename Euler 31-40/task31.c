@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <time.h>
 
 
 int main()
 {
+    time_t start = time(NULL);
     int count = 0;
     for (int i = 0; i <= 200; i++)
         for (int j = 0; j <= 100; j++)
@@ -15,5 +17,6 @@ int main()
                                     if (i * 1 + j * 2 + k * 5 + l * 10 + m * 20 + n * 50 + o * 100 + p * 200 == 200)
                                         count++; 
     printf("%d\n", count);
+    printf("Time: %lf s.\n", difftime(time(NULL), start));
     return 0;
 }
