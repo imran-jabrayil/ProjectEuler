@@ -32,7 +32,7 @@ int main()
         else 
             day++;
     }
-    printf("The number of Sundays is %d.\n", count);
+    printf("%d\n", count);
     return 0;
 }
 
