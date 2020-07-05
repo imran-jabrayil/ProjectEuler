@@ -14,10 +14,6 @@ def calculate(triang):
             triang[-1][i] += last_line[i + 1]
     
     return calculate(triang)
-    
-
-
-
 
 
 start = time()
