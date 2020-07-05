@@ -8,9 +8,7 @@ void fillMatrix(long int * A, int size);
 
 int main()
 {
-    int size;
-    printf("Enter the side of your matrix: ");
-    scanf("%d", &size);
+    int size = 1001;
     long int * matrix = (long int *)calloc(size * size, sizeof(long int));
     fillMatrix(matrix, size);
     long int sum = findSum(matrix, size);
