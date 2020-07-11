@@ -17,27 +17,14 @@ def divs(n):
     return sorted(list(divisors))
 
 
-def is_prime(num, lst):
-    for i in lst:
-        if i > sqrt(num):
-            break
-        if num % i == 0:
-            return False
-    return True
-
-
-def fill_primes(num, lst):
-    for i in range(lst[-1] + 1, num):
-        if is_prime(i, lst):
-            lst.append(i)
-    return lst
+def is_prime(num):
+    return pow(2, num - 1, num) == 1
 
 
 def max_prime_div(num):
     d = divs(n)
-    primes = fill_primes(d[-1], [2, 3])
     for i in d[::-1]:
-        if is_prime(i, primes):
+        if is_prime(i):
             return i
 
 
