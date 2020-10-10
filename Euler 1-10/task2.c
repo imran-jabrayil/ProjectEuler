@@ -2,40 +2,29 @@
 #include <stdlib.h>
 
 
-int fillFib(int * array, long int n);
-long int findSum(int * array, int len);
+long int calculate(long int limit);
 
 
 int main()
 {
-    int * fib = (int *)calloc(1000, sizeof(int));
-    long int n = 4000000;
-    int len = fillFib(fib, n);
-    n = findSum(fib, len);
-    printf("%ld\n", n);
+    long int limit = 4000000;
+    printf("%ld\n", calculate(limit));
     return 0;
 }
 
 
-int fillFib(int * array, long int n)
+
+long int calculate(long int limit)
 {
-    int i = 2;
-    array[0] = 1;
-    array[1] = 2;
-    while (array[i-1] < n)
+    long int temp, sum = 0;
+    long int fib1 = 1, fib2 = 1;
+    while (fib1 <= 4000000)
     {
-        array[i] = array[i-1] + array[i-2];
-        i++;
+        if (fib1 % 2 == 0)
+            sum += fib1;
+        temp = fib1 + fib2;
+        fib1 = fib2;
+        fib2 = temp;
     }
-    return i - 1;
-}
-
-
-long int findSum(int * array, int len)
-{
-    long int sum = 0;
-    for (int i = 0; i < len; i++)
-        if (array[i] % 2 == 0)
-            sum += array[i];
     return sum;
 }
