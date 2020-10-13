@@ -1,10 +1,9 @@
-from math import sqrt
 from time import time
 
 
 def is_prime(num, lst):
     for i in lst:
-        if i > sqrt(num):
+        if i * i > num:
             break
         if num % i == 0:
             return False
@@ -12,7 +11,7 @@ def is_prime(num, lst):
 
 
 def fill_primes(num, lst):
-    for i in range(lst[-1] + 1, num):
+    for i in range(lst[-1] + 1, num + 1):
         if is_prime(i, lst):
             lst.append(i)
     return lst
