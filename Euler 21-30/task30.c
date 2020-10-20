@@ -8,7 +8,7 @@ long int sumNums(long int n);
 int main()
 {
     long int sum = 0;
-    for (long int i = 2; i <= 295246; i++)
+    for (long int i = 2; i <= 354294; i++)
         if (sumNums(i) == i)
             sum += i;
     printf("%ld\n", sum);
