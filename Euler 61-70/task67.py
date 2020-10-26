@@ -20,7 +20,7 @@ start = time()
 
 f = open("D:\\Programming\\ProjectEuler\\Euler 61-70\\triangle.txt", "r")
 nums = [list(map(int, i.split())) for i in f.readlines()]
-
+f.close()
 print(calculate(nums))
 
 print("Time {} s.".format(time() - start))
