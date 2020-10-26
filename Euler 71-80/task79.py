@@ -31,7 +31,4 @@ def calculate():
     return result
 
 
-#nums = import_nums('p079_keylog.txt')
-#print(len(set(''.join(nums))))
-#print(after(nums, '7'))
 print(calculate())
