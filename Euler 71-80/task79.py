@@ -15,7 +15,6 @@ def after(nums, x):
     return len(set(result))
 
 
-
 def calculate():
     nums = import_nums('p079_keylog.txt')
     elems = set(''.join(nums))
