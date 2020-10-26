@@ -1,5 +1,4 @@
 from itertools import combinations
-from operator import itemgetter
 
 
 def import_nums(fn):
