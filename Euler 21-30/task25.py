@@ -1,14 +1,11 @@
 from time import time
 
 def calculate():
-    a, b = 1, 1
-    x = 2
-    count = 3
+    fib1, fib2 = 1, 1
+    count = 1
 
-    while len(str(x)) < 1000:
-        b = a
-        a = x
-        x = a + b
+    while len(str(fib1)) < 1000:
+        fib1, fib2 = fib2, fib1 + fib2
         count += 1
     
     return count
