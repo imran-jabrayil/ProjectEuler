@@ -127,12 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-<<<<<<< HEAD
 test.c
-=======
-
-
->>>>>>> 9cd07ce84374ac7afb69e928785dda96010a9343
 *.exe
 *.txt
 *.dat
